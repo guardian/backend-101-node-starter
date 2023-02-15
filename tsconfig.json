@@ -1,8 +1,9 @@
 {
-  "extends": "fastify-tsconfig",
-  "compilerOptions": {
-    "outDir": "dist",
-    "sourceMap": true
-  },
-  "include": ["src/**/*.ts"]
+	"extends": "@guardian/tsconfig/tsconfig.json",
+	"compilerOptions": {
+		"outDir": "dist",
+		"sourceMap": true,
+		"module": "CommonJS"
+	},
+	"include": ["src/**/*.ts"]
 }
