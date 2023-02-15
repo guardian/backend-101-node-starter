@@ -9,11 +9,9 @@ export type AppOptions = {
 // Pass --options via CLI arguments in command to enable these options.
 const options: AppOptions = {};
 
-/* @eslint-disable */
 const app: FastifyPluginAsync<AppOptions> = async (
 	fastify,
 	opts,
-	// eslint-disable-next-line @typescript-eslint/require-await -- intentionally asynchronous
 ): Promise<void> => {
 	// Place here your custom code!
 
@@ -35,4 +33,5 @@ const app: FastifyPluginAsync<AppOptions> = async (
 	});
 };
 
+export default app;
 export { app, options };

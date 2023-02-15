@@ -7,7 +7,6 @@ import fp from 'fastify-plugin';
  *
  * @see https://github.com/fastify/fastify-sensible
  */
-// eslint-disable-next-line import/no-default-export, @typescript-eslint/require-await -- ignore
 export default fp<SensibleOptions>(async (fastify) => {
 	void fastify.register(sensible);
 });
