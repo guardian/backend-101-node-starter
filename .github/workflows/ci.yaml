@@ -17,3 +17,12 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run build:ts
+      - name: Build and synth CDK
+        working-directory: ./cdk
+        run: |
+          npm ci
+          npm run lint
+          npm run test
+          npm run synth
+
+
